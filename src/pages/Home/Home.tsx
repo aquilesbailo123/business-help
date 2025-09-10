@@ -59,11 +59,26 @@ const Home = () => {
                 <CardTitle>Input Fields</CardTitle>
                 <div className="input-grid">
                     <Input
-                        name="input"
+                        name="password"
+                        type="password"
                         size="md"
                         label="Input"
-                        placeholder='Placeholder'
-                        type="url"
+                        variant="faded"
+                        placeholder='Password'
+                        // labelPlacement='inside'
+                        minLength={4}
+                        value={inputValue}
+                        setValue={setInputValue} 
+                    />
+                    <Input
+                        name="password"
+                        type="password"
+                        size="md"
+                        label="Input"
+                        variant="faded"
+                        // placeholder='Placeholder'
+
+                        // labelPlacement='inside'
                         minLength={4}
                         value={inputValue}
                         setValue={setInputValue} 
@@ -74,6 +89,34 @@ const Home = () => {
                         value={password} 
                         setValue={setPassword} 
                         placeholder="Password Input"
+                    />
+                    <Input
+                        name="password"
+                        radius="full"
+
+                        type="password"
+                        size="md"
+                        label="Input"
+                        variant="faded"
+                        // placeholder='Placeholder'
+                        
+                        labelPlacement='inside'
+                        minLength={4}
+                        value={inputValue}
+                        setValue={setInputValue} 
+                    />
+                    <Input
+                        name="password"
+                        type="password"
+                        size="md"
+                        label="Input"
+                        variant="faded"
+                        placeholder='Placeholder'
+                        
+                        labelPlacement='inside'
+                        minLength={4}
+                        value={inputValue}
+                        setValue={setInputValue} 
                     />
                     <DatePicker 
                         // label="Date"
